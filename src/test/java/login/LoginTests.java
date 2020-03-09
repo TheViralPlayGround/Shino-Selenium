@@ -24,8 +24,8 @@ public class LoginTests extends BaseTests {
     public void verifyLoginWithoutPasswordShowsAlert() {
 
         loginPage = homePage.clickButtonLogin()
-        .enterTextEmailField(testEmail)
-        .clickButtonLogin();
+            .enterTextEmailField(testEmail)
+            .clickButtonLogin();
 
         assertTrue(loginPage.isAlertVisible());
     }
